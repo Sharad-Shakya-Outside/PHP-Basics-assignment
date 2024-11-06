@@ -11,21 +11,14 @@
 <body>
     <main class="container">
         <section class="form-section">
-            <form action="index.php" method="post">
-                <h1>Welcome</h1>
-                <div class="form-element">
-                    <label for="username">Username</label>
-                    <input type="text" id="username">
-                </div>
-                <div class="form-element">
-                    <label for="password">Password</label>
-                    <input type="password" id="password">
-                </div>
+            <form class="form" action="login.php" method="post">
+                <h1 class="heading">Welcome</h1>
+                <input class="input" type="text" name="username" id="username" placeholder="Username">
+                <input class="input" type="password" name="password" id="password" placeholder="Password">
+                <span class="sign-in">Haven't signed up? <a href="index.php">Sign Up</a></span>
 
-                <button type="submit">Login</button>
+                <input class="login-button" type="submit" value="Login">
             </form>
-
-            <p class="sign-in">Haven't signed up? <a class="page-link" href="signup.php">Sign Up</a></p>
         </section>
 
         <section class="message-section">
