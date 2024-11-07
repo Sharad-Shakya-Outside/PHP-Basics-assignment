@@ -134,3 +134,21 @@ form {
   transform: scale(0.95);
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 15px 10px -10px;
 }
+
+.success, .failure {
+  position: fixed;
+  left: 50%;
+  top: 25px;
+  translate: -50% 0;
+  max-width: 500px;
+  padding-inline: 4rem;
+  padding-block: 1rem;
+  text-align: center;
+}
+
+.success {
+  background-color: greenyellow;
+}
+.failure {
+  background-color: orangered;
+}
