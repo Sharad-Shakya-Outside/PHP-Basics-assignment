@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-anton: "Anton", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: repeating-linear-gradient(
+    0deg,
+    black,
+    1px,
+    white 1px,
+    white
+  );
+  background-size: 100% 30px;
+  background-color: white;
+  padding: 4rem;
+}
+
+.navbar {
+  margin-inline: auto;
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+  padding-block: 2rem;
+  padding-inline: 4rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 250px;
+  background-color: white;
+}
+
+.navbar::before {
+  content: "";
+  position: absolute;
+  width: 102%;
+  height: 110%;
+  background: linear-gradient(45deg, #ffbc00, #ff0058);
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 250px;
+}
+
+.title {
+  font-family: var(--font-anton);
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  font-weight: 800;
+  color: #c5ba23;
+}
+
+.logout {
+  background-color: white;
+  color: black;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid black;
+  box-shadow: 0 0 0 0 black;
+}
+
+.logout:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
+}
+
+.logout:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}

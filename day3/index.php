@@ -54,12 +54,13 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    This is the home page <br>
-    <form action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-        <input type="submit" name="logout" value="Logout">
+    <form class="navbar" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
+        <p class="title">phpbasic</p>
+        <input class="logout" type="submit" name="logout" value="Logout">
     </form>
 </body>
 
