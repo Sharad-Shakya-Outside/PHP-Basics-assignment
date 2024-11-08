@@ -54,19 +54,19 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP basic Day 3 - Login and Signup</title>
+    <title>Signup Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <main class="container">
         <section class="message-section">
-            <h1>Sign Up Page</h1>
+            <h1>Hello, New User!</h1>
         </section>
 
         <section class="form-section">
             <form class="form" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-                <h1 class="heading">Welcome</h1>
+                <h1 class="heading">Sign Up</h1>
                 <input class="input" type="text" name="username" id="username" placeholder="Username">
                 <span style="color: red; margin-top: -1.5rem"><?php echo $nameError ?></span>
                 <input class="input" type="password" name="password" id="password" placeholder="Password">

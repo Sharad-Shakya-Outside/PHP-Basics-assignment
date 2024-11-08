@@ -47,7 +47,7 @@ mysqli_close($conn);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP basic Day 3 - Login and Signup</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -55,7 +55,7 @@ mysqli_close($conn);
     <main class="container">
         <section class="form-section">
             <form class="form" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
-                <h1 class="heading">Welcome</h1>
+                <h1 class="heading">Sign In</h1>
                 <input class="input" type="text" name="username" id="username" placeholder="Username">
                 <span style="color: red; margin-top: -1.5rem"><?php echo $nameError ?></span>
                 <input class="input" type="password" name="password" id="password" placeholder="Password">
@@ -67,7 +67,7 @@ mysqli_close($conn);
         </section>
 
         <section class="message-section">
-            <h1>Sign In Page</h1>
+            <h1>Welcome to login</h1>
         </section>
     </main>
 </body>
